@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+	<script src="js/jquery.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <!-- <meta http-equiv="refresh" content="1;url=https://mu-yan.net"> -->
+	<script type="text/javascript" charset="utf-8">
+      	mui.init({
+      	    subpages:[{
+      	      url:'https://mu-yan.net/',
+      	      id:'home',
+      	      styles:{
+      	        top:'45px',//mui标题栏默认高度为45px；
+      	        bottom:'51px'//默认为0px，可不定义；
+      	      }
+      	    }]
+      	  });
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">首页</h1>
+	</header>
+<nav class="mui-bar mui-bar-tab">
+	<a class="mui-tab-item mui-active">
+		<span class="mui-icon mui-icon-home"></span>
+		<span class="mui-tab-label">首页</span>
+	</a>
+	<a class="mui-tab-item">
+		<span class="mui-icon mui-icon-list"></span>
+		<span class="mui-tab-label">项目</span>
+	</a>
+	<a class="mui-tab-item">
+		<span class="mui-icon mui-icon-bars"></span>
+		<span class="mui-tab-label">商城</span>
+	</a>
+	<a class="mui-tab-item">
+		<span class="mui-icon mui-icon-settings"></span>
+		<span class="mui-tab-label">我的</span>
+	</a>
+</nav>
+	<script type="text/javascript">
+		window.onload = function() {
+		//sleep(5000);
+		$("#home").contents().find("._nav").hide();
+		};
+	</script>
+</body>
+</html>
